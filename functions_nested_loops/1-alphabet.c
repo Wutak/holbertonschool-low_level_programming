@@ -8,7 +8,6 @@ void  print_alphabet(void)
 {
 	write(1, "abcdefghijklmnoparstuvwxyz\n", 27);
 }
-
 int main(void)
 {
 	print_alphabet();
