@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,8 +7,8 @@
  */
 int main(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz", 27);
-	write(1, "\n", 1);
+	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+	putchar('\n');
 	write(1, "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n", 27);
 	return (0);
 }
