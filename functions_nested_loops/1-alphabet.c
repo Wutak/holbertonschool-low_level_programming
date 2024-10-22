@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 /**
  * main - check the code
  *
@@ -7,9 +8,4 @@
 void  print_alphabet(void)
 {
 	write(1, "abcdefghijklmnoparstuvwxyz\n", 27);
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
