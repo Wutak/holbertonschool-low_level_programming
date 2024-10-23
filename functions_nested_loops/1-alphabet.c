@@ -1,11 +1,19 @@
 #include <unistd.h>
-#include "main.h"
+#include "1-main.c"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_alphabet - Entry point
+ * Description: alphabet
+ * Return: Nothing.
  */
-void  print_alphabet(void)
+void print_alphabet(void)
 {
-	write(1, "abcdefghijklmnoparstuvwxyz\n", 27);
+	int v;
+
+	v = 'a';
+	while (v <= 'z')
+	{
+		write(1, &v, 1);
+		v++;
+	}
+	write(1, "\n", 1);
 }
