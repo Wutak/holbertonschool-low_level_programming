@@ -1,4 +1,3 @@
-#include "2-main.c"
 #include <unistd.h>
 /**
  * print_alphabet_x10 - Entry point
