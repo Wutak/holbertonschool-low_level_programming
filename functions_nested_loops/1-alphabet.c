@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include "1-main.c"
 /**
  * print_alphabet - Entry point
  * Description: alphabet
