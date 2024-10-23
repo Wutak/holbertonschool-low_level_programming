@@ -1,5 +1,6 @@
 /**
  * _islower - Entry point
+ * @c: input
  * Description: lowercase check
  * Return: 1 (Succes), 0.
  */
