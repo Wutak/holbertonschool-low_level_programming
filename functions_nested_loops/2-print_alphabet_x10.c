@@ -18,7 +18,7 @@ void print_alphabet_x10(void)
 			write(1, &v, 1);
 			v++;
 		}
-		write(1. "\n", 1);
+		write(1, "\n", 1);
 		i++;
 	}
 }
