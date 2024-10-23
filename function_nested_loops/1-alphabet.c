@@ -2,7 +2,7 @@
 #include "1-main.c"
 /**
  * main - Entry point
- *
+ * Description: It prints the alphabet in lowercase followed by a new line
  * Return: Nothing.
  */
 void print_alphabet(void)
