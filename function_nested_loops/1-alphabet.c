@@ -7,5 +7,13 @@
  */
 void print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
+	int v;
+
+	v = 'a';
+	while (v <= 'z')
+	{
+		write(1, &v, 1);
+		v++;
+	}
+	write(1, "\n", 1);
 }
