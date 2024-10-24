@@ -3,7 +3,7 @@
  * print_last_digit - Entry point.
  * @r: input.
  * Description: last digit.
- * return: last digit of number r.
+ * Return: last digit of number r.
  */
 int print_last_digit(int r)
 {
