@@ -1,9 +1,9 @@
 #include <unistd.h>
 /**
- * print_last_digit - Entry point
+ * print_last_digit - Entry point.
  * @r: input.
  * Description: last digit.
- * return: Return modelo.
+ * return: last digit of number r.
  */
 int print_last_digit(int r)
 {
@@ -13,5 +13,6 @@ int print_last_digit(int r)
 		n = -1 * (r % 10);
 	else
 		n = r % 10;
+	write(1, "n % 10) + '0'", 1);
 	return (n % 10);
 }
