@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * jack_bauer - Entry.
  * Description: clock.
@@ -19,12 +20,12 @@ void jack_bauer(void)
 			printf("%d", h);
 			h = (h % 10) + '0';
 			printf("%d", h);
-			printf(":");
+			write(1, ":", 1);
 			m = (m / 10) + '0';
 			printf("%d", m);
 			m = (m % 10) + '0';
 			printf("%d", m);
-			printf("\n");
+			write(1, "\n", 1);
 			m++;
 		}
 		h++;
