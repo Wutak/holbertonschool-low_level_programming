@@ -1,34 +1,30 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
+
 /**
- * jack_bauer - Entry.
- * Description: clock.
- * Return: Nothing.
+ * jack_bauer - Entry
+ * @h,@m: inpuut
+ * Description: clock
+ * Return: Nothing
  */
 void jack_bauer(void)
 {
-	int m;
-	int h;
+	int h, m;
 
-	m = 0;
 	h = 0;
+
 	while (h < 24)
 	{
+		m = 0;
 		while (m < 60)
 		{
-			h = (h / 10) + '0';
-			printf("%d", h);
-			h = (h % 10) + '0';
-			printf("%d", h);
-			write(1, ":", 1);
-			m = (m / 10) + '0';
-			printf("%d", m);
-			m = (m % 10) + '0';
-			printf("%d", m);
-			write(1, "\n", 1);
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
 			m++;
 		}
 		h++;
-		m = 0;
 	}
 }
