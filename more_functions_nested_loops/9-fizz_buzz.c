@@ -36,7 +36,7 @@ void fizz_buzz(void)
 	i = 1;
 	while (i <= 100)
 	{
-		if (i >= '0' && i <= '9')
+		if (i >= 0 && i <= 9)
 		{
 			if ((i % 3) == 0)
 				write(1, "Fizz", 4);
