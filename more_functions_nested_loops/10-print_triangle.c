@@ -1,3 +1,10 @@
+#include <unistd.h>
+/**
+ * print_triangle - Entry
+ * @size: input
+ * Description: print triangle
+ * Return: Nothing
+ */
 void print_triangle(int size)
 {
 	int i;
@@ -5,7 +12,7 @@ void print_triangle(int size)
 	int n;
 
 	i = 0;
-	n = size
+	n = size;
 	if (size <= 0)
 		write(1, "\n", 1);
 	while(i < size)
