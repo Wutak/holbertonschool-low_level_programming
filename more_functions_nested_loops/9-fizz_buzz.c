@@ -59,6 +59,7 @@ void fizz_buzz(void)
 					write(1, "Fizz", 4);
 				if (i % 5 == 0)
 					write(1, "Buzz", 4);
+			}
 			else
 			{
 				ft_putnbr(i);
