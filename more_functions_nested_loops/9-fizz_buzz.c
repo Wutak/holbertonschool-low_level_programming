@@ -65,10 +65,12 @@ void fizz_buzz(void)
 				ft_putnbr(i);
 			}
 		}
-		write(1, " ", 1);
+		if (i < 100)
+			write(1, " ", 1);
+		else
+			write(1, "\n", 1);
 		i++;
 	}
-	write(1, "\n", 1);
 }
 
 /**
