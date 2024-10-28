@@ -10,9 +10,11 @@ void print_triangle(int size)
 	int i;
 	int v;
 	int n;
+	int a;
 
 	i = 0;
 	n = size;
+	a = size;
 	if (size <= 0)
 		write(1, "\n", 1);
 	while(i < size)
@@ -23,11 +25,13 @@ void print_triangle(int size)
 			write(1, " ", 1);
 			v++;
 		}
-		while(n < size)
+		while(a - 1 < size)
 		{
 			write(1, "#", 1);
-			n++;
+			a++;
 		}
 		write(1, "\n", 1);
+		i++;
+		a--;
 	}
 }
