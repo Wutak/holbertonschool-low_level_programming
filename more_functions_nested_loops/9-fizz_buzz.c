@@ -32,18 +32,21 @@ void ft_putnbr(int nb)
 void fizz_buzz(void)
 {
 	int i;
+	int a;
 
 	i = 1;
 	while (i <= 100)
 	{
 		if (i >= 0 && i <= 9)
 		{
+			a = i + '0';
+
 			if ((i % 3) == 0)
 				write(1, "Fizz", 4);
 			else if ((i % 5) == 0)
 				write(1, "Buzz", 4);
 			else
-				write(1, &i, 1);
+				write(1, &a, 1);
 		}
 		else
 		{
