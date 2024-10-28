@@ -1,7 +1,7 @@
 /**
- * int _isdigit - Entry
+ * _isdigit - Entry
  * @c: input
- * Description: check digit
+ * Description: check digit.
  * Return: 1, 0.
  */
 int _isdigit(int c)
