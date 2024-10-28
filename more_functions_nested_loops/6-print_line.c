@@ -12,7 +12,7 @@ void print_line(int n)
 	i = 0;
 	if (n <= 0)
 		write(1, "", 0);
-	while (i <= n)
+	while (i < n)
 	{
 		write(1, "_", 1);
 		i++;
