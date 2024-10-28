@@ -10,6 +10,8 @@ void print_line(int n)
 	int i;
 
 	i = 0;
+	if (n == 0)
+		write(1, "", 0);
 	while (i <= n)
 	{
 		write(1, "_", 1);
