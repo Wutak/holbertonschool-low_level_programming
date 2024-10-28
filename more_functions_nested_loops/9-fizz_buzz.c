@@ -42,18 +42,22 @@ void fizz_buzz(void)
 			a = i + '0';
 
 			if ((i % 3) == 0)
+			{
 				write(1, "Fizz", 4);
-			if ((i % 5) == 0)
-				write(1, "Buzz", 4);
+				if ((i % 5) == 0)
+					write(1, "Buzz", 4);
+			}
 			else
 				write(1, &a, 1);
 		}
 		else
 		{
 			if ((i % 3) == 0)
+			{
 				write(1, "Fizz", 4);
-			 if ((i % 5) == 0)
-				write(1, "Buzz", 4);
+				if ((i % 5) == 0)
+					write(1, "Buzz", 4);
+			}
 			else
 			{
 				ft_putnbr(i);
