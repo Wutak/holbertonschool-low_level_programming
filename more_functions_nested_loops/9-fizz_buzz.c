@@ -70,14 +70,3 @@ void fizz_buzz(void)
 	}
 	write(1, "\n", 1);
 }
-
-/**
- * main - Entry
- * Description: main
- * Return: 0.
- */
-int main(void)
-{
-	fizz_buzz();
-	return (0);
-}
