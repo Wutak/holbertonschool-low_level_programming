@@ -13,14 +13,12 @@ void print_diagonal(int n)
 	i = 0;
 	if (n <= 0)
 	{
-		write(1, "", 0);
 		write(1, "\n", 1);
 	}
 	else if (n == 1)
 	{
 		write(1, "\n", 1);
-		write(1, "\\", 1);
-		write(1, "\n", 1);
+		write(1, "\\\n", 2);
 	}
 	while (i < n)
 	{
@@ -30,8 +28,7 @@ void print_diagonal(int n)
 			write(1, " ", 1);
 			v++;
 		}
-		write(1, "\\", 1);
-		write(1, "\n", 1);
+		write(1, "\\\n", 2);
 		i++;
 	}
 }
