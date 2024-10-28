@@ -43,7 +43,7 @@ void fizz_buzz(void)
 
 			if ((i % 3) == 0)
 				write(1, "Fizz", 4);
-			else if ((i % 5) == 0)
+			if ((i % 5) == 0)
 				write(1, "Buzz", 4);
 			else
 				write(1, &a, 1);
@@ -52,7 +52,7 @@ void fizz_buzz(void)
 		{
 			if ((i % 3) == 0)
 				write(1, "Fizz", 4);
-			else if ((i % 5) == 0)
+			 if ((i % 5) == 0)
 				write(1, "Buzz", 4);
 			else
 			{
