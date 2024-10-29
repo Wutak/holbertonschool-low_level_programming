@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include "10-main.c"
 /**
  * print_triangle - Entry
  * @size: input
