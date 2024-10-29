@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "10-main.c"
 /**
  * print_triangle - Entry
  * @size: input
@@ -9,29 +10,39 @@ void print_triangle(int size)
 {
 	int i;
 	int v;
-	int n;
-	int a;
+	int s;
+	int d;
 
 	i = 0;
-	n = size;
-	a = size;
+	v = 0;
+	d = 0;
+	s = size;
 	if (size <= 0)
 		write(1, "\n", 1);
-	while(i < size)
+	else if(size == 2)
 	{
-		v = 0;
-		while(v < n - 1)
+		write(1, " #\n", 3);
+		write(1, "##\n", 3);
+	}
+	else
+	{
+		while(i < size)
 		{
-			write(1, " ", 1);
-			v++;
+			v = 0;
+			d = 0;
+			while(v < s - 1)
+			{
+				write(1, " ", 1);
+				v++;
+			}
+			while(v + d < size)
+			{
+				write(1, "#", 1);
+				d++;
+			}
+			write(1, "\n", 1);
+			i++;
+			s--;
 		}
-		while(a - 1 < size)
-		{
-			write(1, "#", 1);
-			a++;
-		}
-		write(1, "\n", 1);
-		i++;
-		a--;
 	}
 }
