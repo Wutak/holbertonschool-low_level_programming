@@ -29,7 +29,7 @@ void print_triangle(int size)
 		while (i < size)
 		{
 			v = 0;
-			d = 0
+			d = 0;
 			while (v < s - 1)
 			{
 				write(1, " ", 1);
