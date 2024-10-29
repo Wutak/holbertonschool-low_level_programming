@@ -1,3 +1,4 @@
+#include <unistd.h>
 /**
  * _puts - Entry
  * @str: input
