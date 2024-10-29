@@ -14,10 +14,10 @@ void print_rev(char *s)
 	{
 		i++;
 	}
-	while (i > 0 && i != '\0')
+	while (i > 0)
 	{
-		write(1, &s[i], 1);
 		i--;
+		write(1, &s[i], 1);
 	}
 	write(1, "\n", 1);
 }
