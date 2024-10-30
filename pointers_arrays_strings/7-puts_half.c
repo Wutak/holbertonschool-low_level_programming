@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * puts_half
+ * puts_half - Entry
  * @str: input
  * Description: half
  * Return: Nothing
