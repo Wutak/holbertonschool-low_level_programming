@@ -1,7 +1,7 @@
 /**
  * _strspn - file memory
  * @s: string
- * @accept: string
+ * @accept: compteur
  * Description: print memory s
  * Return: 1
  */
@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		v = 0;
 		while (accept[v] != '\0')
 		{
-			if (s[i] == accept[v])
+			if (accept[v] == s[i])
 			{
 				c++;
 				break;
