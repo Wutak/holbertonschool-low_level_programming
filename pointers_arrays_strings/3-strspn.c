@@ -22,12 +22,12 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				c++;
 				break;
-			}
-			else if (accept[i] == '\0')
-				return (c - 1);
+			}			
 			v++;
 		}
+		if (accept[v] == '\0')
+			break;
 		i++;
 	}
-	return (c - 1);
+	return (c);
 }
