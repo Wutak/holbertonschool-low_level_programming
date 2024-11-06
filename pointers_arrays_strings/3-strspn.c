@@ -1,7 +1,7 @@
 /**
- * _strspn - check description
+ * _strspn - check the description
  * @s: string
- * @accept: string
+ * @accept: compteur
  * Description: print memory s
  * Return: 1
  */
@@ -25,6 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (accept[j] == '\0')
 			break;
+		i++;
 	}
 	return (count);
 }
