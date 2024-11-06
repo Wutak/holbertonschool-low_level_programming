@@ -1,5 +1,3 @@
-#include "main.h"
-#include <stdio.h>
 /**
  * _memset - Entry
  * @s: input
@@ -10,10 +8,13 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	while (n)
+	unsigned int i;
+
+	i = 0;
+	while (i < n)
 	{
-		s[n - 1] = b;
-		n--;
+		s[i] = b;
+		i++;
 	}
 	return (s);
 }
