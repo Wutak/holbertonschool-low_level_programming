@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		v = 0;
 		while (accept[v] != '\0')
 		{
-			if (accept[v] == s[i])
+			if (s[i] == accept[v])
 			{
 				c++;
 				break;
