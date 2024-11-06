@@ -1,15 +1,15 @@
 /**
  * _strspn - check description
  * @s: string
- * @accept: reference bytes container
+ * @accept: string
  * Description: counting bytes
- * Return: Bytes
+ * Return: c
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	int v;
-	unsigned int c;
+	int c;
 
 	i = 0;
 	c = 0;
