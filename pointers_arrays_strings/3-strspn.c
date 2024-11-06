@@ -1,7 +1,7 @@
 /**
- * _strspn - file memory
+ * _strspn - check description
  * @s: string
- * @accept: compteur
+ * @accept: string
  * Description: print memory s
  * Return: 1
  */
