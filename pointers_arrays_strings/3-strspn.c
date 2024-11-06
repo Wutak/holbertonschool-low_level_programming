@@ -1,9 +1,9 @@
 /**
- * _strspn - check description
+ * _strspn - file memory
  * @s: string
  * @accept: string
- * Description: counting bytes
- * Return: c
+ * Description: print memory s
+ * Return: 1
  */
 unsigned int _strspn(char *s, char *accept)
 {
