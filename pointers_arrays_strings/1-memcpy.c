@@ -1,9 +1,9 @@
 /**
- * _memcpy - Entry
- * @dest: input
- * @src: input
- * @n: input
- * Description: memcpy
+ * _memcpy - check description
+ * @dest: destination
+ * @src: source
+ * @n: size
+ * Description: copy memory
  * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
