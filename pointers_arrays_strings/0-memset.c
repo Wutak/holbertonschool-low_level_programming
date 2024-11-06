@@ -1,10 +1,10 @@
 /**
- * _memset - Entry
- * @s: input
- * @b: input
- * @n: input
- * Description: memset
- * Return: 1
+ * _memset - check desciption
+ * @s: memory area
+ * @b: caractere
+ * @n: size
+ * Description: print memory
+ * Return: pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
