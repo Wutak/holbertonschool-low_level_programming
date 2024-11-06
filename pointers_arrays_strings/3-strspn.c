@@ -24,29 +24,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[i] == '\0')
-					return (c - 1);
+				return (c - 1);
 			v++;
 		}
 		i++;
 	}
 	return (c - 1);
-}
-
-#include "main.h"
-#include <stdio.h>
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *s = "hello, world";
-    char *f = "oleh";
-    unsigned int n;
-
-    n = _strspn(s, f);
-    printf("%u\n", n);
-    return (0);
 }
