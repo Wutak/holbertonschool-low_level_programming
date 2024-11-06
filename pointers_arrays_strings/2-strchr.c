@@ -1,9 +1,9 @@
 /**
- * _strchr - Entry
- * @s: input
- * @c: input
- * Description: strchr
- * Return: NULL
+ * _strchr - check description
+ * @s: string
+ * @c: character
+ * Description: string character
+ * Return: string
  */
 char *_strchr(char *s, char c)
 {
