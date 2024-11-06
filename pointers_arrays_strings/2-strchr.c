@@ -3,7 +3,7 @@
  * @s: input
  * @c: input
  * Description: strchr
- * Return: 1, 0
+ * Return: NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -11,11 +11,9 @@ char *_strchr(char *s, char c)
 
 	i = 0;
 	while ((s[i] != c) && (s[i] != '\0'))
-	{
-		if (s[i] != c)
-			i++;
-		else
-			return (s);
-	}
-	return (NULL);
+		i++;
+	if (s[i] == c)
+		return (s + 1);
+	else
+		return (NULL);
 }
