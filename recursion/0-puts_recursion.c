@@ -1,19 +1,18 @@
 #include <unistd.h>
 /**
- * _puts_recursion - check Description
+ * _puts_recursion - check the desc
  * @s: string
- * Description: recursion
- * Return: 1
+ * Desc: write string
+ * Return: string
  */
 void _puts_recursion(char *s)
 {
 	int i = 0;
-
 	if (*s == '\0')
 	{
 		write(1, "\n", 1);
 		return;
 	}
-	write(1, s, 1);
+	write(1, &s[i], 1);
 	_puts_recursion(s + 1);
 }
