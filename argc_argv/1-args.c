@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argv;
 	int c;
+	(void)argv;
 
 	c = 0;
 	while (c <= argc)
