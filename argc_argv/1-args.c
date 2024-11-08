@@ -6,7 +6,7 @@
  * desc: count value
  * Return: 0
  */
-int main(int argc, char argv[0])
+int main(int argc, char *argv[])
 {
 	(void)argv;
 	int c = 0;
