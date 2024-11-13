@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * malloc_checked - check desc
+ * *malloc_checked - check desc
  * @b: number
  * desc: checking malloc
  * Return: 1
