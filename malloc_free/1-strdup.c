@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * _strdup - check desc
+ * *_strdup - check desc
  * @str: string
  * desc: malloc
  * Return: 0
@@ -15,6 +15,7 @@ char *_strdup(char *str)
 	c = 0;
 	if (str == NULL)
 		return (NULL);
+
 	while (str[i] != '\0';)
 		i++;
 
