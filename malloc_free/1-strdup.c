@@ -12,7 +12,6 @@ char *_strdup(char *str)
 	int c;
 
 	i = 0;
-	c = 0;
 	if (str == NULL)
 		return (NULL);
 
@@ -24,6 +23,7 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 
+	c = 0;
 	while (c < i)
 	{
 		p[c] = str[c];
