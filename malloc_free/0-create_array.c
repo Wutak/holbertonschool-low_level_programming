@@ -1,12 +1,12 @@
 #include <stdlib.h>
 /**
- * create_array - check desc
+ * *create_array - check desc
  * @size: size of array
  * @c: character
  * desc: create array
  * Return: 0
  */
-char *create_array(unnsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *a;
 	unsigned int i = 0;
