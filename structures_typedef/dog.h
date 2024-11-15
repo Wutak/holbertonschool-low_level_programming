@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct dog my_dog;
+struct my_dog;
 {
 	char *name;
 	float age;
