@@ -1,1 +1,1 @@
-c
+structures typedef
