@@ -2,7 +2,7 @@
 /**
  * *_strdup - check desc
  * @str: string
- * desc: malloc
+ * desc: strdup
  * Return: 0
  */
 char *_strdup(char *str)
@@ -11,7 +11,6 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int c;
 
-	i = 0;
 	if (str == NULL)
 		return (NULL);
 
@@ -19,7 +18,7 @@ char *_strdup(char *str)
 	while (str[i] != '\0';)
 		i++;
 
-	p = malloc(i * sizeof(*a) + 1);
+	p = malloc(i * sizeof(*str) + 1);
 	if (a == NULL)
 		return (NULL);
 
