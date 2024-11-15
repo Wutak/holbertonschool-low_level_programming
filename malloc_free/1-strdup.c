@@ -1,30 +1,51 @@
 #include <stdlib.h>
+
+/**
+ * _strlen - check desc
+ * @s: pointer
+ * desc: strlen
+ * Return: v
+ */
+int _strlen(char *s)
+{
+	int v = 0;
+
+	while (s[v] != '\0' [v++])
+	{
+
+	}
+	return (v);
+}
+
 /**
  * *_strdup - check desc
- * @str: string
+ * @str: pointer
  * desc: strdup
- * Return: 0
+ * Return: p
  */
+
 char *_strdup(char *str)
 {
-	char *p, *r;
-	int i = 0;
+	char *p;
+	int size;
+	int i;
 
-	if (!str)
+	if (str == NULL)
+	{
 		return (NULL);
+	}
+	size = _strlen(str) + 1;
+	p = malloc(size * sizeof(char));
 
-	p = str;
-	while (*p++)
+	i = 0;
+	while (i < size)
+	{
+		if (p == NULL)
+		{
+			return (NULL);
+	}
+		p[i] = str[i];
 		i++;
-
-	r = malloc(i + 1);
-	if (!r)
-		return (NULL);
-
-	p = r;
-	while (*str){
-		*p++ = *str++;
-	
-	*p = 0;
-	return (r);
+	}
+	return (p);
 }
