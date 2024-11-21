@@ -14,8 +14,8 @@ int (*get_op_funct(char *s))(int, int)
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
-		{"/", op_div};
-		{"%", op_mod};
+		{"/", op_div},
+		{"%", op_mod},
 		{NULL, NULL}
 	};
 	while (ops[i].op != '\0')
