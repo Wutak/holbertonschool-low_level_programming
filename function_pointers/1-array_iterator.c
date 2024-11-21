@@ -3,16 +3,17 @@
 /**
  * array_iterator - array
  * @array: pointer
- * @size_t: size
+ * @size: size
  * @action: function
  * Return: nothing
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i = 0;
+	size_t i = 0;
+
 	while (i < size)
 	{
-		action(array);
+		action(array[i]);
 		i++;
 	}
 }
