@@ -6,7 +6,7 @@
  * main - main function
  * @argc: argc
  * @argv: argv
- * Return:
+ * Return: 0
  */
 int main(argc, *argv[])
 {
