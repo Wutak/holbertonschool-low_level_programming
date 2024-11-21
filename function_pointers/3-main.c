@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * main - main function
+ * @argc: argc
+ * @argv: argv
+ * Return:
+ */
 int main(argc, *argv[])
 {
 	int (*oprt)(int, int);
