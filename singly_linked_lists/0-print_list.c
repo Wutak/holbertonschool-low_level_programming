@@ -1,17 +1,22 @@
 #include "lists.h"
-
+#include <stdio.h>
+/**
+ * printf_list - print list
+ * @h: list
+ * Return: count
+ */
 size_t print_list(const list_t *h)
 {
-	size_t life;
-	life = 0;
+	size_t count = 0;
+
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-			printf("%d %s\n", 0, "(nil)");
+			printf("[%d] %s\n", 0, "(nil)");
 		else
-			printf("%d %s\n", h->len, h-str);
-		h = h->nnext;
-		life++;
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		count++;
 	}
-	return(life);
+	return(count);
 }
