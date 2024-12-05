@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+ * print_dlistinct - print list
+ * @h: head
+ * Return: n
+ */
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t n = 0;
@@ -7,8 +11,8 @@ size_t print_dlistint(const dlistint_t *h)
 	while (h != '\0')
 	{
 		printf("%d\n", h->n);
-		a++;
+		n++;
 		h = h->next;
 	}
-	return (a);
+	return (n);
 }
