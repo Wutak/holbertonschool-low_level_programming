@@ -1,13 +1,16 @@
-#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_dlistinct - print list
+ * dlistint_len - list of int
  * @h: head
- * Return: count
+ * Return: count of nodes
  */
-size_t print_dlistint(const dlistint_t *h)
+
+size_t dlistint_len(const dlistint_t *h)
 {
-	size_t n = 0;
+	int count;
+
+	count = 0;
 
 	if (h == NULL)
 		return (count);
@@ -17,7 +20,6 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
 		count++;
 		h = h->next;
 	}
