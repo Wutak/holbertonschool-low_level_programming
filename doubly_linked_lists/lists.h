@@ -10,11 +10,11 @@
  * @next: points to next node
  * Return: Nothing
  */
-typedef struct listint_s
+typedef struct dlistint_s
 {
 	int n;
-	struct listint_s *next;
-} listint_t;
+	struct dlistint_s *next;
+} dlistint_t;
 
 size_t print_dtlistint(const dlistint_t *h);
 
