@@ -10,7 +10,7 @@
  * @next: points to next node
  * Return: Nothing
  */
-typedef struct dlistint_t
+typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
