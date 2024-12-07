@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistinct - print list
+ * print_dlistint - print list
  * @h: head
  * Return: count
  */
