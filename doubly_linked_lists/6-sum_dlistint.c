@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - sum of data
+ * sum_dlistint - return sum
  * @head: head
  * Return: sum
  */
@@ -11,13 +11,13 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head != NULL)
 	{
-		while (head-prev != NULL)
+		while (head->prev != NULL)
 			head = head->prev;
 
-		while(head != NULL)
+		while (head != NULL)
 		{
-			sum += head->n;
-			ehad = head->next;
+			sum+= head->n;
+			head = head->next;
 		}
 	}
 	
